@@ -2,9 +2,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const {SERVER_PORT} = process.env
 const {seed, getDoorForm, createDoorForm, deleteForm} = require('./controller.js')
 const path = require('path')
+const PORT = process.env.port || 5000
 
 app.use(express.json())
 app.use(cors())
@@ -23,4 +23,6 @@ app.delete('/door_form/:id', deleteForm)
 // app.put(`/api/door_form/:id`, updateForm)
 
 
-app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`)
+  })

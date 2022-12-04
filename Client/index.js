@@ -54,7 +54,7 @@ function handleSubmit(e) {
         frame: frameInput.value,
     }
 
-    axios.post('http://localhost:4069/door_form', body)
+    axios.post('/door_form', body)
         .then(() => {
             
             nameInput.value = ''
@@ -92,7 +92,7 @@ function handleSubmit(e) {
 function deleteCard(id) {
     let result = confirm("Are You Sure You Want To Delete?");
 if (result) {
-    axios.delete(`http://localhost:4069/door_form/${id}`)
+    axios.delete(`/door_form/${id}`)
         .then(() => getDoorForm())
         .catch(err => console.log(err))
 }
@@ -101,7 +101,7 @@ if (result) {
 function getDoorForm() {
     formList.innerHTML = ''
 
-    axios.get('http://localhost:4069/door_form/')
+    axios.get('/door_form/')
         .then(res => {
             res.data.forEach(elem => {
                 let formCard = `<div class="form-card">
