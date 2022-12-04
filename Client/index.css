@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    font-size: 75px;
+    top: 10px;
+}
+
+header{
+    height: 150px;
+    background-color: rgb(67, 67, 196);
+}
+
+main {
+    display: flex;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(207, 207, 207);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+}
+
+.add-door{
+    text-align: center;
+}
+.form-border {
+    margin: 25px;
+    background-color: rgb(67, 67, 196);
+    height: 600px;
+    border-style: solid;
+}
+
+.form-card{
+    background-color: rgb(207, 207, 207);
+    height: 500px;
+    width: 360px;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 10px;
+    top: 15px;
+    text-align: center;
+    border: 15px solid rgb(67, 67, 196);
+}
+
+#form-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #232323;
+    width: 100px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: #111111;
+}
+
+input[type='text'] {
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #111111;
+    background-color: rgb(207, 207, 207);
+}
+
+.btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.btns-container > button {
+    width: 30px;
+}
+
+
+#searchbar{
+    width: auto;
+    margin-left: 90%;
+    padding:5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Door Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <header>
+    <div>
+      <h1 class="logo">Michael'sDoors.com</h1>
+    </div>
+    <input class="new-input" id="searchbar" onkeyup="search_form()" type="text"
+      name="search" placeholder="Search Customer...">
+  </header>
+  <body>
+    <main>
+        <div class="form-border">
+      <aside>
+        <h2 class="add-door">Add a Door</h2>
+
+        <form>
+          <label for="door-form" class="measurment"><h4>Customer Name</h4></label>
+          <input type="text" name ="name" id="customer-input" />
+
+          <label for="door-form" class="measurement"><h4>Address</h4></label>
+          <input type="text" name="address" id="add-input" />
+
+          <h4>Measurements</h4>
+          
+          <div class="measurement">
+              <label for="door-form">Hinge:</label>
+              <input type="text" name="hinge" id="hinge" />
+            </div>
+            
+            <div class="measurement">
+                <label for="door-form">Width:</label>
+                <input type="text" name="width" id="width" />
+            </div>
+            
+            <div class="measurement">
+                <label for="door-form">Height:</label>
+                <input type="text" name="height" id="height" />
+            </div>
+            
+            <div class="measurement">
+                <label for="door-form">Thickness:</label>
+                <input type="text" name="thickeness" id="thickeness" />
+            </div>
+            
+            <div class="measurement">
+            <label for="door-form">Swing:</label>
+            <input type="text" name="swing" id="swing" />
+        </div>
+        
+        <div class="measurement">
+            <label for="door-form">Prep:</label>
+            <input type="text" name="prep" id="prep" />
+        </div>
+        <div class="measurement">
+          <label for="door-form">Frame:</label>
+          <input type="text" name="frame" id="frame" />
+        </div>
+        
+        <button>Add New Door</button>
+    </form>
+</aside>
+</div><br></br>
+<section id="form-list"></section>
+    </main>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
