@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { query } = require('express');
 const Sequelize = require('sequelize');
+const { CONNECTION_STRING } = process.env;
 
 
 const sequelize = new Sequelize(CONNECTION_STRING, {
